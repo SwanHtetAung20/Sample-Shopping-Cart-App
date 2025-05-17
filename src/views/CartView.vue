@@ -30,7 +30,7 @@ const handleOrder = () => {
 }
 </script>
 <template>
-  <div class="flex flex-col items-center justify-center">
+  <div class="flex flex-col items-center justify-center" v-if="cartsData.length > 0">
     <div class="w-full max-w-[70%] bg-gray-300 rounded-xs">
       <header class="flex justify-between p-4 capitalize font-mono">
         <span class="font-mono capitalize">title</span>
@@ -65,5 +65,8 @@ const handleOrder = () => {
         <ShoppingCartIcon class="h-6 w-6" /> order
       </button>
     </div>
+  </div>
+  <div class="flex flex-col items-center justify-center" v-else>
+    <span class="text-2xl font-mono">Nothing to Order.!</span>
   </div>
 </template>
