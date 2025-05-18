@@ -66,7 +66,7 @@ const handleOrder = () => {
       </button>
     </div>
   </div>
-  <div class="flex flex-col items-center justify-center" v-else>
-    <span class="text-2xl font-mono">Nothing to Order.!</span>
+  <div class="flex grow items-center justify-center" v-else>
+    <span class="text-2xl font-mono bg-red-600 text-white p-2 rounded">Nothing to Order.!</span>
   </div>
 </template>
